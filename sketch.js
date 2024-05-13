@@ -32,7 +32,7 @@ let trilha;
 
 function setup() {
   createCanvas(800, 500);    // cria a tela e define tamanho (x,y)(larguara/altura)
-  //trilha.loop(); // chamo o som trilha e o coloco em looping
+  trilha.loop(); // chamo o som trilha e o coloco em looping
 }
 
 function mostraBolinha() {
