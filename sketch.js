@@ -29,6 +29,12 @@ let raquetada;
 let ponto;
 let trilha;
 
+function preload(){ //função para carregar os arquivos necessarios (sons)
+  trilha = loadSound("trilha.mp3"); 
+  // o arquivo é chamado de forma direta pois já esta no diretório rais
+  ponto = loadSound("ponto.mp3");
+  raquetada = loadSound("raquetada.mp3");
+}
 
 function setup() {
   createCanvas(800, 500);    // cria a tela e define tamanho (x,y)(larguara/altura)
@@ -121,12 +127,7 @@ function marcaPonto() {
   }
 }
 
-function preload(){ //função para carregar os arquivos necessarios (sons)
-  trilha = loadSound("trilha.mp3"); 
-  // o arquivo é chamado de forma direta pois já esta no diretório rais
-  ponto = loadSound("ponto.mp3");
-  raquetada = loadSound("raquetada.mp3");
-}
+
 
 function bolinhaNaoFicaPresa(){  // função para não deixar a bolinha presa atraz da raquete
     if (xBolinha - raio< 0){ // se a boilinha passou da raquete da esquerda - reposiciona a bolinha
