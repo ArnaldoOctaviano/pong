@@ -30,15 +30,15 @@ let ponto;
 let trilha;
 
 function preload(){ //função para carregar os arquivos necessarios (sons)
-  trilha = loadSound("trilha.mp3"); 
-  // o arquivo é chamado de forma direta pois já esta no diretório rais
   ponto = loadSound("ponto.mp3");
   raquetada = loadSound("raquetada.mp3");
+  trilha = loadSound("trilha.mp3"); 
+  // o arquivo é chamado de forma direta pois já esta no diretório raiz
 }
 
 function setup() {
   createCanvas(800, 500);    // cria a tela e define tamanho (x,y)(larguara/altura)
-  trilha.loop(); // chamo o som trilha e o coloco em looping
+  //trilha.loop(); // chamo o som trilha e o coloco em looping
 }
 
 function mostraBolinha() {
